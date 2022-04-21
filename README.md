@@ -1,17 +1,12 @@
-# WP2_SamuelFernando
-P5
+# WP2_TugasPertemuan6
 HASIL OUTPUT :
 
-Output-Isi-Pustaka-Buku.png
+Output-Dari-Formsiswa.png
 
-Output-Isi-Pustaka-Role.png
-
-Output-Isi-Pustaka-User.png
-
-Output-Isi-Pustaka-Kategori.png
+Output-Dari-Formsiswa2.png
 
 File Yang Ditambahkan Sebagai Berikut :
 
-pustaka-booking/Application/config = autoload.php, database.php
+pustaka-booking/Application/Controller = Formsiswa.php
 
-pustaka-booking/Application/Models = ModelUser.php, ModelBuku.php
+pustaka-booking/Application/Views = view-data-siswa.php, view-form-siswa.php
