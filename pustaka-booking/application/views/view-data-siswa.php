@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tampil Data Siswa</title>
 </head>
 <body>
-<body>
     <center>
+    <fieldset>
+        <legend>Tampil Data Siswa</legend>
         <table>
             <tr>
                 <th colspan="3">
@@ -21,17 +22,17 @@
                 </td>
             </tr>
             <tr>
-                <th>NIS</th>
-                <th>:</th>
-                <td>
-                    <?= $NIS; ?>
-                </td>
-            </tr>
-            <tr>
                 <th>Nama Siswa</th>
                 <th>:</th>
                 <td>
-                    <?= $nama; ?>
+                    <?= $siswa; ?>
+                </td>
+            </tr>
+            <tr>
+                <th>NIS</th>
+                <th>:</th>
+                <td>
+                    <?= $nis; ?>
                 </td>
             </tr>
             <tr>
@@ -45,14 +46,14 @@
                 <th>Tanggal Lahir</th>
                 <th>:</th>
                 <td>
-                    <?= $tanggal; ?>
+                    <?= $tgl; ?>
                 </td>
             </tr>
             <tr>
-                <th>Tempat Lahir
+                <th>Tempat Lahir</th>
                 <th>:</th>
                 <td>
-                    <?= $tempat; ?>
+                    <?= $lahir; ?>
                 </td>
             </tr>
             <tr>
@@ -75,15 +76,13 @@
                 <td>
                     <?= $agama; ?>
                 </td>
-             </tr>
+            </tr>
             <tr>
                 <td colspan="3" align="center">
-                    <a href="<?= base_url('Formsiswa'); ?>">Kembali</a>
+                    <a href="<?= base_url('formsiswa'); ?>">Kembali</a>
                 </td>
             </tr>
         </table>
     </center>
-</body>
-</html>
 </body>
 </html>

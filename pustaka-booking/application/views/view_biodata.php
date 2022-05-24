@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1><?=$title;?> Perkenalkan</h1>
-    <p>Nama Saya Samuel Fernando</p>
-    <p>Hobi Saya Bermain Futsal</p>
+    <p>Nama Saya Andriansyah</p>
+    <p>Hobi Saya Bermain Apex Legend</p>
 </body>
 </html>

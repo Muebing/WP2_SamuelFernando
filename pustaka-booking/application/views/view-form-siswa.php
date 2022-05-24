@@ -8,8 +8,9 @@
 </head>
 <body>
     <center>
-        <?php echo validation_errors(); ?>
-        <form action="<?= base_url('Formsiswa/cetak'); ?>"method="post">
+        <form action="<?= ('Formsiswa/cetak'); ?>"method="post">
+        <fieldset>
+        <legend>Input Data Siswa</legend>
             <table>
                 <tr>
                     <th colspan="3">
@@ -17,80 +18,88 @@
                     </th>
                 </tr>
                 <tr>
-                    <td clospan="3">
+                    <td colspan="3">
                         <hr>
                     </td>
                 </tr>
                 <tr>
-                    <th>nama siswa</th>
+                    <th>Nama Siswa</th>
                     <th>:</th>
                     <td>
-                        <input type="text" name="nama" id="nama">
-                        <?= form_error('nama', '<small style="color:red">', '</small>'); ?>
+                        <input type="text" name="siswa" id="siswa" placeholder="Nama Siswa....">
+                        <?= form_error('siswa', '<small style="color:red">', '</small>'); ?> 
+                    </td>
+                    <td>
+                        
                     </td>
                 </tr>
                 <tr>
                     <th>NIS</th>
                     <td>:</td>
                     <td>
-                        <input type="text" name="NIS" id="NIS">
-                        <?= form_error('NIS', '<small style="color:red">', '</small>'); ?>
+                        <input type="text" name="nis" id="nis" placeholder="NIS Siswa....">
+                        <?= form_error('nis', '<small style="color:red">', '</small>'); ?> 
                     </td>
                 </tr>
+
                 <tr>
                     <th>Kelas</th>
                     <td>:</td>
                     <td>
-                        <input type="text" name="kelas" id="kelas">
-                        <?= form_error('kelas', '<small style="color:red">', '</small>'); ?>
+                        <input type="text" name="kelas" id="kelas" placeholder="Kelas Siswa....">
+                        <?= form_error('kelas', '<small style="color:red">', '</small>'); ?> 
                     </td>
                 </tr>
+
                 <tr>
-                    <th>tanggal lahir</th>
+                    <th>Tanggal Lahir</th>
                     <td>:</td>
                     <td>
-                        <input type="date" name="tanggal">
-                        <?= form_error('tanggal', '<small style="color:red">', '</small>'); ?>
+                        <input type="date" name="tgl">
+                        <?= form_error('tanggal_lahir', '<small style="color:red">', '</small>'); ?> 
                     </td>
                 </tr>
+
                 <tr>
-                    <th>tempat lahir </th>
+                    <th>Tempat Lahir</th>
                     <td>:</td>
                     <td>
-                        <input type="text" name="tempat" id="tempat">
-                        <?= form_error('tempat', '<small style="color:red">', '</small>'); ?>
+                        <input type="text" name="lahir" id="lahir" placeholder="Tempat Lahir Siswa....">
+                        <?= form_error('tempat_lahir', '<small style="color:red">', '</small>'); ?> 
                     </td>
                 </tr>
+
                 <tr>
-                    <th>alamat</th>
+                    <th>Alamat</th>
                     <td>:</td>
                     <td>
-                        <input type="text" name="alamat" id="alamat">
-                        <?= form_error('alamat', '<small style="color:red">', '</small>'); ?>
+                        <textarea name="alamat" id="alamat" placeholder="Alamat Siswa...." cols="30" rows="10"></textarea>
+                        <?= form_error('alamat', '<small style="color:red">', '</small>'); ?> 
                     </td>
                 </tr>
+
                 <tr>
-                    <th>jenis kelamin</th>
+                    <th>Jenis Kelamin</th>
                     <td>:</td>
                     <td>
-                        <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
-                        <label><input type="radio" name="jenis_kelamin" value="Perempuan" /> Perempuan</label>
-                        <?= form_error('jenis_kelamin', '<small style="color:red">', '</small>'); ?>
+                    <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+
+                    <label><input type="radio" name="jenis_kelamin" value="Perempuan" /> Perempuan</label>
+                        <?= form_error('jenis_kelamin', '<small style="color:red">', '</small>'); ?> 
                     </td>
                 </tr>
+
                 <tr>
                     <th>Agama</th>
                     <td>:</td>
                     <td>
                         <select name="agama" id="agama">
-                        <option value="">Pilih Agama</option>
-                        <option value="islam">islam</option>
-                        <option value="kristen">kristen</option>
-                        <option value="katolik">katolik</option>
-                        <option value="budhha">budhha</option>
-                        <option value="hindu">hindu</option>
-                        <option value="protestan">protestan</option>
-                        <option value="khonghucu">khonghucu</option>
+                        <option value="Pilih Agama">Pilih Agama</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Konghucu">Konghucu</option>
                         </select>
                     </td>
                 </tr>
